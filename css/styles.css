@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F6F6; /* Color de fondo */
+    color: #1E56A0; /* Color del texto principal */
+}
+
+header {
+    background-color: #D6E4F0; /* Color de encabezado */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1E56A0; /* Color de los enlaces */
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #A01631; /* Color de los encabezados */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white; /* Fondo de secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #1E56A0; /* Color de las etiquetas */
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D6E4F0; /* Borde de campos */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+button {
+    padding: 10px;
+    background-color: #72B07B; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1E56A0; /* Color del botón al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #D6E4F0; /* Color de pie de página */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
