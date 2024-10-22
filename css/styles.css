@@ -1,80 +1,104 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #F6F6F6; /* Color de fondo */
-    color: #1E56A0; /* Color del texto principal */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fondo negro puro */
+    color: #FAFAFA; /* Texto en blanco */
+    text-align: center;
 }
 
 header {
-    background-color: #D6E4F0; /* Color de encabezado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    text-align: center;
+    background-color: #000000; /* Fondo del header en negro puro */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #1E56A0; /* Color de los enlaces */
-    font-weight: bold;
-}
-
-h1, h2 {
-    color: #A01631; /* Color de los encabezados */
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white; /* Fondo de secciones */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
-}
-
-form {
+    list-style: none;
     display: flex;
-    flex-direction: column;
+    gap: 20px;
 }
 
-label {
-    margin-bottom: 5px;
-    color: #1E56A0; /* Color de las etiquetas */
+nav a {
+    color: #FAFAFA; /* Texto del menú en blanco */
+    text-decoration: none;
 }
 
-input, textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #D6E4F0; /* Borde de campos */
-    border-radius: 4px; /* Bordes redondeados */
+.button-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    margin-left: auto; /* Alinea los botones a la derecha del menú */
 }
 
-button {
-    padding: 10px;
-    background-color: #72B07B; /* Color del botón */
-    color: white; /* Color del texto del botón */
+.btn {
+    background-color: #005BFF; /* Botones en azul más puro */
+    color: #FAFAFA; /* Texto de los botones en blanco */
     border: none;
-    border-radius: 4px;
+    padding: 10px 20px;
+    border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #1E56A0; /* Color del botón al pasar el ratón */
+.btn:hover {
+    background-color: #0045C6; /* Azul más oscuro al pasar el cursor */
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #D6E4F0; /* Color de pie de página */
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.login {
+    background-color: #FAFAFA; /* Botón de login en blanco */
+    color: #000000; /* Texto del botón en negro */
+}
+
+.start {
+    background-color: #005BFF; /* Botón de empezar en azul puro */
+}
+
+/* Flexbox para logo y título */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 90px;
+    height: auto;
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+.logo-title {
+    font-size: 1.5rem;
+    color: #FAFAFA; /* Título del logo en blanco */
+}
+
+.hero {
+    margin-top: 100px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #005BFF; /* Título principal en azul puro */
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #FAFAFA; /* Texto del párrafo en blanco */
+}
+
+.hero-btn {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    background-color: #005BFF; /* Botón principal en azul puro */
+    color: #FAFAFA; /* Texto del botón en blanco */
+}
+
+.subtext {
+    margin-top: 20px;
+    color: #C7EEFF; /* Texto pequeño en azul claro */
 }
