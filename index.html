@@ -1,61 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AECS</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>AECS UTP</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <header>
-        <h1>Asociación Estudiantil de Ciberseguridad</h1>
         <nav>
+            <div class="logo-container">
+                <img src="logopng.png" alt="Logo AECS" class="logo-image">
+                <div class="logo-title">AECS UTP</div>
+            </div>
             <ul>
-                <li><a href="#presentacion">Presentación</a></li>
-                <li><a href="#actividades">Actividades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button class="btn login">Dashboard Login</button></li>
+                <li><button class="btn start">Start Writing Now</button></li>
             </ul>
         </nav>
     </header>
 
-    <section id="presentacion">
-        <h2>¿Quiénes somos?</h2>
-        <p>Somos un grupo de estudiantes dedicados a fomentar el aprendizaje colaborativo y el desarrollo de habilidades.</p>
-    </section>
-
-    <section id="actividades">
-        <h2>Actividades</h2>
-        <ul>
-            <li>Talleres de capacitación</li>
-            <li>Charlas con expertos</li>
-            <li>Proyectos comunitarios</li>
-            <li>Eventos de networking</li>
-        </ul>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarnos a través del siguiente formulario:</p>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <section>
-        <button onclick="window.location.href='login.html'">Regresar al Inicio de Sesión</button>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Asociación Estudiantil de Ciberseguridad. Todos los derechos reservados.</p>
-    </footer>
+    <main>
+        <section class="hero">
+            <h1>Create content automagically using AI</h1>
+            <p><a href="#">blog posts</a>, <a href="#">marketing copy</a> and custom instructions generated for you <a href="#">automatically</a>.</p>
+            <button class="btn hero-btn">Start creating now</button>
+            <p class="subtext">Join 122,000 marketers who use our AI to augment their content creation process.</p>
+        </section>
+    </main>
 </body>
 </html>
